@@ -18,13 +18,21 @@
  outline: 1px solid red;  
 } */
 
-body {
+html {
     width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    max-width: 1200px;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     overflow-x: hidden;
     color: white;
     background-image: linear-gradient(160deg, #141E30 0%, #243B55 100%);
@@ -35,14 +43,28 @@ body {
 /************** HEADER ***************/
 /*************************************/ 
 
+header {
+    width: 100%;
+    min-height: 800px;
+    max-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 h1 {
     font-size: 8rem;
 }
 
-h1, .typewriter-container {
-    margin-left: -30%;
+.dev-img {
+    width: 300px;
 }
 
+@media screen and (min-width: 1000px) {
+    .dev-img {
+        width: 400px;
+    }
+}
 
 /*************************************/ 
 /**************** NAV ****************/
