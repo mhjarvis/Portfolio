@@ -1,4 +1,5 @@
 @import url('./reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;500;700&display=swap');
 
 /*************************************/ 
 /************** GENERAL **************/
@@ -6,8 +7,9 @@
 
 :root {
     font-size: 10px;
+    font-family: 'Cormorant', serif;
+    font-weight: 700;
 
-    
     /* Color Variables */
     --white: #000000;       
 }
@@ -20,11 +22,11 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow-x: hidden;
     color: white;
-    background-color: #0093E9;
     background-image: linear-gradient(160deg, #141E30 0%, #243B55 100%);
     color: white;
 }
@@ -34,7 +36,11 @@ body {
 /*************************************/ 
 
 h1 {
-    font-size: 6rem;
+    font-size: 8rem;
+}
+
+h1, .typewriter-container {
+    margin-left: -30%;
 }
 
 
@@ -43,7 +49,7 @@ h1 {
 /*************************************/ 
 
 .nav-list {
-    font-size: 2em;
+    font-size: 2.7em;
     position: absolute;
     top: 0;
     right: 0;
@@ -52,12 +58,13 @@ h1 {
 }
 
 .nav-list li {
-    margin: 0 3rem;
+    margin: 0 2rem;
 }
 
 .nav-list li:hover {
-    color: rgb(211, 137, 34);
+    color: orange;
     cursor: grab;
+    transform: scale(1.1)
 }
 
 /*************************************/ 
@@ -66,6 +73,7 @@ h1 {
 
 .typewriter-container {
     display: inline-block;
+    
 }
 
 .typewriter-content {
@@ -77,7 +85,6 @@ h1 {
     animation: 
         typing 7s steps(20, end) infinite,
         blink 1s infinite;
-
 }
 
 @keyframes typing {
