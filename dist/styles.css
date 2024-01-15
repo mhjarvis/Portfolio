@@ -150,24 +150,8 @@ nav {
 /************* SLIDESHOW *************/
 /*************************************/
 
-.slideshow {
-    height: 120px;
-    width: 800px;
-    max-width: 1000px;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-    transform: translate3d(0, 0, 0);
-}
-
-.slideshow-images {
-    height: 100px;
-    margin-top: 10px;
-    width: 2500px;
-    display: flex;
-    justify-content: center;
-
-    animation: moveSlideshow 12s linear infinite;
+.slideshow-container {
+    
 }
 
 .language-box {
@@ -178,6 +162,7 @@ nav {
     align-items: center;
     justify-content: center;
     border: 1px dashed white;
+    margin: 0 10px;
 }
 
 .language-box img {
@@ -189,11 +174,6 @@ nav {
     font-size: 2rem;
 }
 
-@keyframes moveSlideshow {
-    100% { 
-      transform: translateX(-66.6666%);  
-    }
-  }
 
 /*************************************/ 
 /******** MAIN BODY CONTENT **********/
