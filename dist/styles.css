@@ -151,34 +151,57 @@ nav {
 /*************************************/
 
 .carousel-container {
-    position: relative;
-    width: fit-content;
-    max-width: 1200px;
-    height: 200px;
-    border: 1px solid white;
-    margin-top: -100px;
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
     overflow: hidden;
-    border: 10px solid white;
+    border: 1px solid white;
 }
 
-.imagecarousel img {
+.carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    gap: 20px;
+    animation: bannermove 20s linear infinite;
+}
+
+.language-container {
+    border: 1px dashed white;
+    height: 70px;
+    width: 70px;
+    padding: 20px;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-image {
     margin: 0px 0px;
-    box-shadow: 2px 2px 8px #8a8a8a;
-    overflow: hidden;
+    height: 50px;
   }
 
-.carousel-container {
-    max-width: 1200;
-    animation: bannermove 10s linear infinite;
-    overflow:hidden;
+.language-name {
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 10px;
 }
 
 @keyframes bannermove {
     0% {
         transform: translateX(0);
     }    
-    100% {
+    50% {
         transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
     }
 }
 
