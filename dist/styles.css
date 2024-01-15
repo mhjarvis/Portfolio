@@ -147,63 +147,53 @@ nav {
 }
 
 /*************************************/ 
-/************* CAROUSEL **************/
+/************* SLIDESHOW *************/
 /*************************************/
 
-.carousel-container {
-    width: 100vw;
-    height: 150px;
-    display: flex;
-    align-items: center;
+.slideshow {
+    height: 120px;
+    width: 800px;
     max-width: 1000px;
-    overflow: hidden;
-    border: 1px solid white;
-}
-
-.carousel {
+    margin: 0 auto;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: fit-content;
-    gap: 20px;
-    animation: bannermove 20s linear infinite;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
 }
 
-.language-container {
-    border: 1px dashed white;
-    height: 70px;
-    width: 70px;
-    padding: 20px;
-    margin: 0 10px;
+.slideshow-images {
+    height: 100px;
+    margin-top: 10px;
+    width: 2500px;
+    display: flex;
+    justify-content: center;
+
+    animation: moveSlideshow 12s linear infinite;
+}
+
+.language-box {
+    width: 100px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border: 1px dashed white;
 }
 
-.carousel-image {
-    margin: 0px 0px;
-    height: 50px;
+.language-box img {
+    width: 50px;
+    margin-bottom: 5px;
+}
+
+.language-box p {
+    font-size: 2rem;
+}
+
+@keyframes moveSlideshow {
+    100% { 
+      transform: translateX(-66.6666%);  
+    }
   }
-
-.language-name {
-    font-size: 1.5rem;
-    color: white;
-    margin-top: 10px;
-}
-
-@keyframes bannermove {
-    0% {
-        transform: translateX(0);
-    }    
-    50% {
-        transform: translateX(-50%);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
 
 /*************************************/ 
 /******** MAIN BODY CONTENT **********/
