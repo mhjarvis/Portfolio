@@ -150,8 +150,8 @@ nav {
 /************* SLIDESHOW *************/
 /*************************************/
 
-.slideshow-container {
-    
+.slideshow {
+    display: flex;
 }
 
 .language-box {
