@@ -150,7 +150,37 @@ nav {
 /************* CAROUSEL **************/
 /*************************************/
 
+.carousel-container {
+    position: relative;
+    width: fit-content;
+    max-width: 1200px;
+    height: 200px;
+    border: 1px solid white;
+    margin-top: -100px;
+    overflow: hidden;
+    border: 10px solid white;
+}
 
+.imagecarousel img {
+    margin: 0px 0px;
+    box-shadow: 2px 2px 8px #8a8a8a;
+    overflow: hidden;
+  }
+
+.carousel-container {
+    max-width: 1200;
+    animation: bannermove 10s linear infinite;
+    overflow:hidden;
+}
+
+@keyframes bannermove {
+    0% {
+        transform: translateX(0);
+    }    
+    100% {
+        transform: translateX(-50%);
+    }
+}
 
 /*************************************/ 
 /******** MAIN BODY CONTENT **********/
