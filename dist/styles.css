@@ -60,6 +60,10 @@ h1 {
     width: 300px;
 }
 
+.dev-img:hover {
+    transform: rotate3D(0, 1, 0, -10deg);
+}
+
 @media screen and (min-width: 1000px) {
     .dev-img {
         width: 400px;
@@ -196,5 +200,10 @@ footer {
 
 .my-links {
     display: flex;
+    width: 100px;
+    justify-content: space-between;
 }
 
+.my-links img {
+    height: 50px;
+}
