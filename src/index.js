@@ -2,9 +2,9 @@ console.log('test')
 
 $(document).ready(function(){
     $('.slideshow').slick({
-        slidesToShow: 10,
+        slidesToShow: 9,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 1200,
       });
   });

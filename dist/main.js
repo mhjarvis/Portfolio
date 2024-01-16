@@ -1,1 +1,1 @@
-console.log("test"),$(document).ready((function(){$(".slideshow").slick({slidesToShow:10,slidesToScroll:1,autoplay:!0,autoplaySpeed:1e3})}));
+console.log("test"),$(document).ready((function(){$(".slideshow").slick({slidesToShow:9,slidesToScroll:1,autoplay:!0,autoplaySpeed:1200})}));
