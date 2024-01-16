@@ -221,7 +221,7 @@ main {
 /*************************************/ 
 
 footer {
-    font-size: 3rem;
+    font-size: 2rem;
     position: relative;
     width: 100vw;
     height: 120px;
@@ -236,19 +236,22 @@ footer {
 .footer-container {
     width: 1200px;
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
 }
 
 .my-links {
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     width: 100px;
     justify-content: space-between;
 }
 
-.my-links img {
-    height: 50px;
+.linkedin-img {
+    width: 40px;
 }
 
-
-/** TESTING ONLY **/
-
+#github-footer {
+    font-size: 30px;
+}
