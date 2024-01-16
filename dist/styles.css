@@ -167,12 +167,13 @@ nav {
     border: 1px dashed white;
 }
 
-.lang {
-    width: 70px;
-    height: 70px;
+i {
+    font-size: 70px;
 }
 
-
+.slideshow > button {
+    display: none;
+}
 /*************************************/ 
 /******** MAIN BODY CONTENT **********/
 /*************************************/ 
