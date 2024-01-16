@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
     <script src="main.js" defer></script>
     <title>Document</title>
 </head>
@@ -29,27 +37,9 @@
         <img src="./images/dev-img.png" alt="image-of-programmer" class="dev-img">
     </header>
 
-    <div class="slideshow-container">
-        <div class="language-box python">
-            <img src="./images/languages/python.png" alt="python-symbol">
-            <p class="language-text">Python</p>
-        </div>
-        <div class="language-box html">
-            <img src="./images/languages/html.png" alt="html-symbol">
-            <p class="language-text">HTML</p>
-        </div>
-        <div class="language-box css">
-            <img src="./images/languages/css.png" alt="css-symbol">
-            <p class="language-text">CSS</p>
-        </div>
-        <div class="language-box javascript">
-            <img src="./images/languages/javascript.png" alt="javascript-symbol">
-            <p class="language-text">JavaScript</p>
-        </div>
-        <div class="language-box mongo">
-            <img src="./images/languages/mongo.png" alt="mongo-symbol">
-            <p class="language-text">MongoDB</p>
-        </div>
+    <div class="slideshow" id="slideshow">
+
+
     </div>
 
     <main>
@@ -88,5 +78,7 @@ In short, I am a dedicated and passionate developer who thrives on learning and 
             </div>
         </div>
     </footer>
+          <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+          
 </body>
 </html>

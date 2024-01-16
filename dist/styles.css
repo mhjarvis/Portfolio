@@ -150,13 +150,18 @@ nav {
 /************* SLIDESHOW *************/
 /*************************************/
 
-.slideshow-container {
-    
+#slideshow {
+    width: 1000px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
 }
 
-.language-box {
-    width: 100px;
-    height: 100px;
+#python-lang {
+    width: 50px;
+    height: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -165,8 +170,13 @@ nav {
     margin: 0 10px;
 }
 
+#python-img {
+    width: 50px;
+    margin: auto auto;
+}
+
 .language-box img {
-    height: 50px;
+    height: 40px;
     margin-bottom: 5px;
 }
 
