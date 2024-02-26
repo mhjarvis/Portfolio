@@ -68,6 +68,7 @@ header {
 
 h1 {
     font-size: 8rem;
+    animation: moveInLeft 2s ease-out;
 }
 
 .dev-img {
@@ -81,6 +82,29 @@ h1 {
 @media screen and (min-width: 1000px) {
     .dev-img {
         width: 400px;
+    }
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    20% {
+        transform: translateX(50px);
+    }
+    40% {
+        transform: translateX(-25px);
+    }
+    60% {
+        transform: translateX(15px);
+    }
+    80% {
+        transform: translateX(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
